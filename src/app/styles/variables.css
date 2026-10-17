@@ -1,0 +1,8 @@
+:root {
+  --header-height: 6.5rem;
+  --radius-sm: 0.9rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.75rem;
+  --shadow-soft: 0 18px 44px rgba(15, 41, 77, 0.12);
+  --shadow-strong: 0 24px 54px rgba(15, 41, 77, 0.16);
+}
