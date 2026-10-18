@@ -20,7 +20,6 @@ export const PROTECTED_ROUTE_PREFIXES = [
   APP_ROUTES.checkout,
   APP_ROUTES.orders,
   APP_ROUTES.admin,
-  APP_ROUTES.categories,
 ]
 
 export const DEFAULT_AUTHENTICATED_REDIRECT = APP_ROUTES.dashboard

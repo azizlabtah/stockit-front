@@ -1482,3 +1482,243 @@ code {
     font-size: 13px;
   }
 }
+
+
+/* ================================
+   FOOTER STOCKIT
+================================ */
+
+.stockit-footer {
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  color: var(--foreground);
+  background: rgba(255, 255, 255, 0.82);
+  border-top: 1px solid var(--surface-border);
+}
+
+/* Zone principale */
+
+.stockit-footer__main {
+  padding: 3.5rem 1.5rem 3rem;
+}
+
+.stockit-footer__container {
+  display: grid;
+  grid-template-columns: minmax(230px, 1.5fr) repeat(3, minmax(140px, 1fr));
+  gap: 3rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Logo et présentation */
+
+.stockit-footer__brand {
+  max-width: 340px;
+}
+
+.stockit-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--foreground);
+  font-size: 1.65rem;
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  text-decoration: none;
+}
+
+.stockit-footer__logo-mark {
+  display: grid;
+  width: 2.65rem;
+  height: 2.65rem;
+  place-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: normal;
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-500),
+    var(--color-accent-400)
+  );
+  border-radius: 0.85rem;
+  box-shadow: 0 5px 14px rgba(25, 118, 210, 0.16);
+}
+
+.stockit-footer__description {
+  margin: 1.15rem 0 1.3rem;
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.stockit-footer__trust {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: var(--color-neutral-700);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.stockit-footer__trust-icon {
+  display: inline-grid;
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  color: var(--success);
+  background: var(--color-accent-100);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+/* Colonnes de navigation */
+
+.stockit-footer__column h3 {
+  margin: 0 0 1.2rem;
+  color: var(--foreground);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.stockit-footer__column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.stockit-footer__column a {
+  display: inline-block;
+  color: var(--muted-foreground);
+  font-size: 0.87rem;
+  line-height: 1.5;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.stockit-footer__column a:hover {
+  color: var(--color-brand-500);
+  transform: translateX(3px);
+}
+
+.stockit-footer__column a:focus-visible,
+.stockit-footer__logo:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Barre inférieure */
+
+.stockit-footer__bottom {
+  border-top: 1px solid var(--surface-border);
+  background: rgba(237, 242, 247, 0.45);
+}
+
+.stockit-footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1440px;
+  min-height: 68px;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+}
+
+.stockit-footer__bottom p {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.stockit-footer__bottom strong {
+  color: var(--color-neutral-700);
+  font-weight: 800;
+}
+
+.stockit-footer__made-for {
+  text-align: right;
+}
+
+/* Tablettes */
+
+@media (max-width: 1000px) {
+  .stockit-footer__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem 3rem;
+  }
+
+  .stockit-footer__brand {
+    max-width: 400px;
+  }
+}
+
+/* Mobiles */
+
+@media (max-width: 560px) {
+  .stockit-footer__main {
+    padding: 2.5rem 1.1rem 2rem;
+  }
+
+  .stockit-footer__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.2rem 1.2rem;
+  }
+
+  .stockit-footer__brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+
+  .stockit-footer__description {
+    max-width: 420px;
+    font-size: 0.88rem;
+  }
+
+  .stockit-footer__column h3 {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .stockit-footer__column ul {
+    gap: 0.8rem;
+  }
+
+  .stockit-footer__column a {
+    font-size: 0.82rem;
+  }
+
+  .stockit-footer__bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    padding: 1.1rem;
+  }
+
+  .stockit-footer__bottom p {
+    font-size: 0.78rem;
+  }
+
+  .stockit-footer__made-for {
+    text-align: left;
+  }
+}
+
+/* Accessibilité */
+
+@media (prefers-reduced-motion: reduce) {
+  .stockit-footer__column a {
+    transition: none;
+  }
+}

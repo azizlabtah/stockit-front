@@ -4,6 +4,7 @@ import './globals.css'
 
 import AppProviders from './providers'
 import Header from './components/common/Header'
+import Footer from './components/common/Footer'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <div className="app-shell">
             <Header />
             <div className="app-content">{children}</div>
+            <Footer />
           </div>
         </AppProviders>
       </body>

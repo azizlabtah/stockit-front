@@ -80,7 +80,7 @@ export default function HeroSlider({
   }
 
   return (
-    <section className="hero-slider" aria-label="Offres et promotions">
+    <section className="hero-slider" style={{ marginTop: '5px' }} aria-label="Offres et promotions">
       <Carousel
         autoplay={autoplay && validSlides.length > 1}
         interval={interval}
